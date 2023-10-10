@@ -1,0 +1,17 @@
+<p>{{ frase }}</p>
+
+<a [href]="link">Clique aqui!!</a>
+
+<p (click)="mudarCores()" [style.background-color]="backgroundColor" [style.color]="fonteCor">Clique aqui para mudar as cores</p>
+
+<select [(ngModel)]="textoSelecionado">
+    <option value="texto1">texto 1</option>
+    <option value="texto2">texto 2</option>
+    <option value="texto3">texto 3</option>
+    <option value="texto4">texto 4</option>
+</select>
+
+<div *ngIf="textoSelecionado === 'texto1'"> In this RPG</div>
+<div *ngIf="textoSelecionado === 'texto2'">you control a human</div>
+<div *ngIf="textoSelecionado === 'texto3'">who falls underground</div>
+<div *ngIf="textoSelecionado === 'texto4'">into the world of monsters</div>
